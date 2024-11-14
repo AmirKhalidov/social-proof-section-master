@@ -104,7 +104,7 @@ body {
   line-height: 1.4;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1023px) {
   body {
     background-image: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bg-pattern-top-desktop-LEie1dqcveyU47dI42Fk5q5Qm6fl2A.svg"), url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bg-pattern-bottom-desktop-OD3t5LJju3epd346CtDkAYbsJg1Gsn.svg");
   }
