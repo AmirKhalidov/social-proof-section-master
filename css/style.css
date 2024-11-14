@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  background-color: hsl(0, 0%, 100%);
+  background-image: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bg-pattern-top-mobile-2eZqQXoO8UsE9WlIcLHAFC05gZMVd5.svg"), url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bg-pattern-bottom-mobile-uYv0wbTazw6UGSXASiAayUWofcLR7Y.svg");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 24px;
+}
+
+.reviews {
+  max-width: 1110px;
+  width: 100%;
+}
+.reviews__container {
+  display: grid;
+  gap: 40px;
+}
+.reviews__header {
+  text-align: center;
+}
+.reviews__title {
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.reviews__description {
+  color: hsl(303, 10%, 53%);
+  font-weight: 500;
+}
+.reviews__ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.reviews__rating {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.reviews__stars {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.reviews__star {
+  width: 17px;
+  height: 16px;
+}
+.reviews__rating-text {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+.reviews__testimonials {
+  display: grid;
+  gap: 16px;
+}
+.reviews__card {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  padding: 40px 32px 32px;
+}
+.reviews__card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.reviews__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 24px;
+}
+.reviews__name {
+  font-size: 17px;
+  font-weight: 700;
+}
+.reviews__verified {
+  color: hsl(333, 80%, 67%);
+  font-size: 17px;
+}
+.reviews__quote {
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bg-pattern-top-desktop-LEie1dqcveyU47dI42Fk5q5Qm6fl2A.svg"), url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bg-pattern-bottom-desktop-OD3t5LJju3epd346CtDkAYbsJg1Gsn.svg");
+  }
+  .reviews__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 30px;
+  }
+  .reviews__header {
+    text-align: left;
+  }
+  .reviews__title {
+    font-size: 56px;
+    max-width: 13ch;
+  }
+  .reviews__description {
+    max-width: 45ch;
+  }
+  .reviews__ratings {
+    justify-content: center;
+  }
+  .reviews__rating {
+    flex-direction: row;
+    padding: 20px 32px;
+    width: 445px;
+  }
+  .reviews__rating:nth-child(2) {
+    margin-left: 48px;
+  }
+  .reviews__rating:nth-child(3) {
+    margin-left: 96px;
+  }
+  .reviews__stars {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+  .reviews__testimonials {
+    grid-column: 1/-1;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: start;
+  }
+  .reviews__card {
+    max-width: 335px;
+  }
+  .reviews__card:nth-child(2) {
+    margin-top: 16px;
+  }
+  .reviews__card:nth-child(3) {
+    margin-top: 32px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
